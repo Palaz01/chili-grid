@@ -154,6 +154,62 @@ GRID LAYOUT
     font-size: 2em;
   }
 
+  @media screen and (min-width: 750px) {
+
+    .content {
+      display: grid;
+      grid-template-columns: 70% 30%;
+    }
+  
+    #header, #banner {
+      grid-column: 1/3;
+    }
+
+    #latest-news {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  
+    #sidebar {
+      grid-column: 2/3;
+    }
+  
+    #categories {
+      grid-column: 1/3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+  
+    .category-item {
+      display: grid;
+      margin: 0;
+    }
+  
+    .category-item img,
+    .overlay {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .overlay {
+      background: rgba(49, 164, 68, .6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+    }
+  
+    .category-item:hover .overlay {
+      opacity: 1;
+    }
+  
+    #footer {
+      grid-column: 1/3;
+    }
+
+  }
+
   @media screen and (min-width: 900px) {
     .content{
       max-width: none;
@@ -191,6 +247,7 @@ GRID LAYOUT
     }
 
     #categories {
+      grid-column: 1/2;
       grid-row: 4/5;
       display: grid;
       grid-template-columns: 1fr 1fr;
