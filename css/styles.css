@@ -1,7 +1,7 @@
 /* BASE STYLES */
 
 body {
-   font-size: 16px;
+   font-size: 14px;
    color: #555555;
    font-family: 'Open Sans', sans-serif;
    margin: 0;
@@ -55,6 +55,10 @@ section {
   color: #fff;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+#main-nav ul li a:hover {
+  color: #31a444; 
 }
 
 .closenav {
@@ -264,6 +268,10 @@ GRID LAYOUT
   }
 
   @media screen and (min-width: 900px) {
+    body {
+      font-size: 16px;
+    }
+
     .content{
       max-width: none;
       display: grid;
@@ -271,7 +279,7 @@ GRID LAYOUT
     }
 
     .banner-text h1 {
-      font-size: 3em;
+      font-size: 3rem;
     }
 
     #latest-news {

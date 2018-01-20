@@ -1,0 +1,53 @@
+/* BASE STYLES */
+
+.species-content {
+   max-width: 900px;
+   margin: 0 auto;
+ }
+
+ /* Species Intro */
+
+ #species-intro {
+    background: #211d32;
+    color: #fff;
+    text-align: center;
+ }
+
+ #species-intro h1 {
+    font-size: 2em;
+ }
+
+ /* Chili Species */
+
+ #chili-species {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+ }
+
+ .chili-item {
+    width: 40%;
+    display: inline-block;
+ }
+
+ /* Selection */
+
+ #selection {
+    text-align: center;
+ }
+
+ .option {
+    display: inline-block;
+    margin: 10px 20px;
+ }
+
+ .option label {
+    display: block;
+    font-weight: bold;
+ }
+
+ .pepper-icon {
+    width: 30px;
+    height: auto;
+    display: inline-block;
+ }
