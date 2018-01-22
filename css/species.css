@@ -23,6 +23,7 @@
     text-align: center;
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-bottom: 50px;
  }
 
  .chili-item {
@@ -50,4 +51,62 @@
     width: 30px;
     height: auto;
     display: inline-block;
+ }
+
+ /* GRID LAYOUT */
+
+ @supports (display: grid) {
+
+  .species-content {
+    max-width: none;
+  }
+
+   @media screen and (min-width: 750px) {
+    #chili-species {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .chili-item {
+      width: 100%;
+      display: grid;
+    }
+
+    .chili-item img,
+    .overlay {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .chili-item-highlighted {
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
+   }
+   @media screen and (min-width: 915px) {
+     .species-content {
+       display: grid;
+       grid-template-columns: 10% 80% 10%;
+     }
+
+     #header,
+     #species-intro,
+     #footer {
+       grid-column: 1/4;
+     }
+
+     #selection,
+     #chili-species {
+       grid-column: 2/3;
+     }
+
+     @media screen and (min-width: 1200px) {
+       #chili-species {
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+       }
+     }
+
+
+   }
  }
